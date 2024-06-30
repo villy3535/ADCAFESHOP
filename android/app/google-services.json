@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "720955481757",
+    "project_id": "adcafeshop-6e837",
+    "storage_bucket": "adcafeshop-6e837.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720955481757:android:6d500b033f4630b8817e74",
+        "android_client_info": {
+          "package_name": "com.adcafeshop.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHXIP-6coxL5y4KxuBk2ZKWuQdcLh9zfc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
