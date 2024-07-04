@@ -1,0 +1,82 @@
+<mxGraph version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defaults as="mxGraph" minimumGraphSize="500 500">
+    <vertex style="shape=ellipse;whiteSpace=nowrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2">
+      <port name="Start" spot="bottom"/>
+    </vertex>
+    <vertex style="shape=rectangle;whiteSpace=nowrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2">
+      <port name="Login/Signup" spot="right"/>
+      <port name="Home Screen" spot="bottom"/>
+      <port name="Browse Restaurants" spot="right"/>
+      <port name="Restaurant Menu" spot="bottom"/>
+      <port name="Cart" spot="right"/>
+      <port name="Checkout" spot="bottom"/>
+      <port name="Order Confirmation" spot="right"/>
+      <port name="Order Delivered" spot="bottom"/>
+      <port name="Complete Order" spot="right"/>
+    </vertex>
+    <vertex style="shape=diamond;whiteSpace=nowrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2">
+      <port name="Yes" spot="right"/>
+      <port name="No" spot="bottom"/>
+    </vertex>
+    <vertex style="shape=terminator;whiteSpace=nowrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2">
+      <port name="End" spot="bottom"/>
+    </vertex>
+    <edge style="strokeColor=#000000;strokeWidth=2"/>
+  </defaults>
+  <cells>
+    <vertex id="0">
+      <value>Start</value>
+      <port name="Start"/>
+    </vertex>
+    <vertex id="1">
+      <value>Login / Signup</value>
+      <port name="Login/Signup"/>
+      <port name="Home Screen"/>
+    </vertex>
+    <vertex id="2">
+      <value>Home Screen</value>
+      <port name="Home Screen"/>
+      <port name="Browse Restaurants"/>
+    </vertex>
+    <vertex id="3">
+      <value>Browse Restaurants</value>
+      <port name="Browse Restaurants"/>
+      <port name="Restaurant Menu"/>
+      <port name="Search for specific restaurants?" spot="right"/>
+    </vertex>
+    <vertex id="4" style="shape=diamond">
+      <value>Search for specific restaurants?</value>
+      <port name="Yes" spot="right"/>
+      <port name="No" spot="bottom"/>
+    </vertex>
+    <vertex id="5">
+      <value>Search Results</value>
+      <port name="Restaurant Menu"/>
+    </vertex>
+    <vertex id="6">
+      <value>Restaurant Menu</value>
+      <port name="Restaurant Menu"/>
+      <port name="Cart"/>
+    </vertex>
+    <vertex id="7">
+      <value>Review Cart</value>
+      <port name="Cart"/>
+      <port name="Checkout"/>
+      <port name="Edit Cart" spot="right"/>
+    </vertex>
+    <vertex id="8">
+      <value>Edit Cart</value>
+      <port name="Cart"/>
+    </vertex>
+    <vertex id="9">
+      <value>Checkout</value>
+      <port name="Checkout"/>
+      <port name="Order Confirmation"/>
+      <port name="Enter Delivery Addr" spot="right"/>
+    </vertex>
+    <vertex id="10" style="shape=diamond">
+      <value>Valid Address?</value>
+      <port name="Yes" spot="right"/>
+      <port name="No" spot="bottom"/>
+    </vertex>
+    <vertex id="11">
